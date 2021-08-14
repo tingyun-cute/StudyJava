@@ -1,0 +1,22 @@
+https://www.cnblogs.com/xwdreamer/archive/2011/12/16/2296904.html
+https://blog.csdn.net/huangwuyi/article/details/5412500
+https://blog.csdn.net/xinyuezitang/article/details/89213783
+https://www.cnblogs.com/Animation-programmer/p/7997621.html
+https://blog.csdn.net/zhouyingge1104/article/details/35994379
+
+
+1、JSONObject
+json对象，就是一个键对应一个值，使用的是大括号{ }，如：{key:value}
+
+2、JSONArray
+json数组，使用中括号[ ],只不过数组里面的项也是json键值对格式的
+
+3、Json对象中添加的是键值对，JSONArray中添加的是Json对象
+JSONObject Json = new JSONObject();
+JSONArray JsonArray = new JSONArray();
+Json.put("key", "value");//JSONObject对象中添加键值对
+JsonArray.add(Json);//将JSONObject对象添加到Json数组中
+
+4、JSONObject与Map
+Map map和json都是键值对，不同的是map中键值对中间用等号分开，json中键值对中间用冒号分开。其实json就是一种特殊形式的map。
+Map<String,String> strmap=new JSONObject();
